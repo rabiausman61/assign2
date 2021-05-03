@@ -30,14 +30,10 @@ function productdel(ctl) {
         
 function productUpdate() {
    
-    if ($("#name").val() == ("") || $("#age").val()==("") || $("#gender").val()==(""))
-      {
-        alert("Kindly Input All fields"); 
-      }
-    else {
+  
         productsAdd();
         formClear();
-      }
+    
 
 
 }
