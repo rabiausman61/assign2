@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="./jquery-3.6.0.min.js" ></script>
+    <script src="./jque.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>form</title>
+</head>
+<body>
+    <form id= "myform" onreset="formClear();"  onsubmit="event.preventDefault();onsub();" autocomplete="off">
+        <table>
+
+        <tr>
+            <td>
+        
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" pattern="[A-Za-z\s]+" title="Name must be in alphabets" maxlength="10"><br>
+        <label for="Age">Age</label><br>
+        <input type="number" id="age" name="age" min="10" max="50"> 
+
+
+        <span id="ageerror"></span><br>
+
+
+<label for ="Gender">Gender</label>
+        <input type="radio" id="gender" name="gender" value="Male">
+<label for="male">Male</label>
+<input type="radio" id="gender" name="gender" value="Female">
+<label for="female">Female</label><br>
+        <label for="City">City</label>
+        <select id="city" name="city">
+          <option value="lahore">Lahore</option>
+          <option value="multan">Multan</option>
+          <option value="islamabad">Islamabad</option>
+          <option value="karachi">Karachi</option>
+        </select>
+        <br>
+        <br>
+
+        <button type="submit" id= "add"> Add </button>
+
+    <button type="submit" id = "update"> update </button>
+
+
+<button id="reset"> Reset</button>  
+    </tr>
+</td>
+
+
+</form>
+
+
+<table style="width:50%" class="list" id="m">
+    <tr id="t">
+        
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>City</th>
+      <th>Action</th>
+    </tr>
+   
+    <tbody> 
+
+    </tbody>
+  </table>
+
+  
+
+</body>
+</html>
